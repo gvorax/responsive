@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.box {
+  width: 300px;
+  height: 300px;
+  background-color: red;
+  margin: 20px;
+  color: #fff;
+  font-size: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 576px) {
+  .box {
+    background-color: green;
+    width: 150px;
+    height: 150px;
+    border-radius: 50px;
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 577px) and (max-width: 768px) {
+  .container {
+    background-color: blue;
+  }
+
+  .box {
+    width: 200px;
+    height: 200px;
+    background-color: black;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .container {
+    background-image: url("https://www.cnet.com/a/img/resize/22ff271b6b0b9b0e9c05e00b8229b9c09faf0a30/hub/2021/10/13/0652789e-b01c-4c7f-afd5-a61762a4ebab/ogi1-2022-bmw-m5-cs-011.jpg?auto=webp&fit=crop&height=675&width=1200");
+    background-size: cover;
+  }
+
+  .box {
+    width: 220px;
+    height: 220px;
+    background-color: rgb(194, 0, 162);
+  }
+}
